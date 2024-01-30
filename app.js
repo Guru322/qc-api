@@ -45,7 +45,7 @@ const route = new Router()
 const routes = require('./routes')
 
 route.get('/', (ctx, next) => {
-     ctx.body = "Server Quoted Chat Online, Please Read Docs Here https://github.com/rizzlogy/qc-api";
+     ctx.body = "Server Online";
 })
 
 route.use('/*', routes.routeApi.routes())
